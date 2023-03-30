@@ -6,11 +6,13 @@
   list-style: none;
 
 }
-a{
+
+a {
   text-decoration: none;
   color: #fff;
 }
-a:hover{
+
+a:hover {
   color: #fff;
 }
 
@@ -25,18 +27,48 @@ a:hover{
   text-decoration: none;
 }
 
-.logo::after{
-    content: "";
-    display: inline-block;
-    border-bottom: 2px solid #fff;
-    margin: 10px;
-    width: 150px;
-  }
+.logo::after {
+  content: "";
+  display: inline-block;
+  border-bottom: 2px solid #fff;
+  margin: 10px;
+  width: 150px;
+}
 
 .rect {
   width: 250px;
   height: 1px;
   top: 168;
+}
+
+.fa-chevron-down{
+  align-items: center;
+  justify-content: center;
+}
+
+.down-arrow-first{
+  margin: 15% 0;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.down-arrow {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .first-section {
@@ -116,7 +148,7 @@ a:hover{
   width: 150px;
 }
 
-.About-text-two-title::after{
+.About-text-two-title::after {
   content: "";
   display: inline-block;
   border-bottom: 1px solid #fff;
@@ -160,6 +192,11 @@ a:hover{
   height: 45px;
 }
 
+.submit:hover{
+  background-color: #292929;
+  color: #fff;
+}
+
 .socials {
   color: #fff;
   font-family: 'Inter';
@@ -179,12 +216,34 @@ a:hover{
 }
 
 .novus {
-  background: linear-gradient(to right, #2200F1,  #1FB8E9);
+  background: linear-gradient(to right, #2200F1, #1FB8E9);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
+.About-text-two {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-text {
+  padding: 0%;
+  margin: 0;
+}
+
 @media only screen and (max-width: 600px) {
+
+  .logo {
+    color: #fff;
+    font-size: large;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 48px;
+    text-decoration: none;
+  }
+
   .intro-text {
     font-family: 'Inter';
     font-style: normal;
@@ -201,8 +260,8 @@ a:hover{
     margin: 10px;
     width: 50px;
   }
-  
-  .About-text-two-title::after{
+
+  .About-text-two-title::after {
     content: "";
     display: inline-block;
     border-bottom: 1px solid #fff;
@@ -210,7 +269,7 @@ a:hover{
     width: 50px;
   }
 
-  .logo::after{
+  .logo::after {
     content: "";
     display: inline-block;
     border-bottom: 2px solid #fff;
@@ -218,4 +277,20 @@ a:hover{
     width: 50px;
   }
 
+  .About-text-two {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-text {
+    padding: 0%;
+    margin: 0;
+  }
+
+  .down-arrow-first{
+    margin: 0;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
 }
