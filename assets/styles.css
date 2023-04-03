@@ -245,6 +245,10 @@ a:hover {
     padding: 0;
   }
 
+  .first-section{
+    min-height: 100%;
+  }
+
   .intro-text {
     font-family: 'Inter';
     font-style: normal;
